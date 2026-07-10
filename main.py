@@ -14,7 +14,9 @@ import google.api_core.exceptions as exceptions
 ##modelo = genai.GenerativeModel("gemini-1.5-flash-8b")
 
 # IMPORTANTE: Substitua pela sua chave real ou use st.secrets para segurança
-API_KEY = st.secrets["AQ.Ab8RN6KcMHcANoErUSZSg7GZjRCqwfJ0RSyDLcUpSgguvp6c8Q"]
+#API_KEY = st.secrets["AQ.Ab8RN6KcMHcANoErUSZSg7GZjRCqwfJ0RSyDLcUpSgguvp6c8Q"]
+API_KEY = st.secrets["GEMINI_API_KEY"]
+
 genai.configure(api_key=API_KEY)
 
 # CORREÇÃO: Atualizado de 'gemini-1.5-flash-8b' para 'gemini-2.5-flash'
